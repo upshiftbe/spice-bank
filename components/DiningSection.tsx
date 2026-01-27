@@ -36,9 +36,7 @@ const DiningSection = ({
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <span className="text-sm text-[#1a1a1a]/40">
-            0{index + 1}
-          </span>
+          <span className="text-sm text-[#1a1a1a]/40">0{index + 1}</span>
         </motion.div>
 
         {/* Title */}

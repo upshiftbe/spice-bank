@@ -33,7 +33,6 @@ const ComingSoon = () => {
           </span>{" "}
           begins.
         </p>
-
       </motion.div>
 
       {/* Bottom Title */}

@@ -92,7 +92,8 @@ const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-[#f8f6f1]/10 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-[10px] md:text-xs text-[#f8f6f1]/35">
           <p>
-            &copy; {new Date().getFullYear()} Spice Bank. All rights reserved. Build with 💪 by{" "}
+            &copy; {new Date().getFullYear()} Spice Bank. All rights reserved.
+            Build with 💪 by{" "}
             <a
               href="https://upshift.be"
               target="_blank"

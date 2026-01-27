@@ -13,7 +13,7 @@
 //   contactContent,
 // } from "@/content/site-content";
 
-import ComingSoon from './coming-soon/page';
+import ComingSoon from "./coming-soon/page";
 
 const Home = () => {
   return (
