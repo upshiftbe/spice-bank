@@ -38,7 +38,7 @@ const Footer = () => {
               <p>123 Culinary Street</p>
               <p>London, W1 2AB</p>
               <p className="mt-4">020 1234 5678</p>
-              <p>hello@spicebank.com</p>
+              <p>hello@spicebank.be</p>
             </div>
           </motion.div>
 
@@ -90,9 +90,19 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-[#f8f6f1]/10 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center text-xs text-[#f8f6f1]/40">
-          <p>&copy; {new Date().getFullYear()} Spice Bank</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+        <div className="border-t border-[#f8f6f1]/10 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-[10px] md:text-xs text-[#f8f6f1]/35">
+          <p>
+            &copy; {new Date().getFullYear()} Spice Bank. All rights reserved. Build with 💪 by{" "}
+            <a
+              href="https://upshift.be"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#f8f6f1]/70 transition-colors duration-300"
+            >
+              upshift
+            </a>
+          </p>
+          <div className="flex space-x-6 mt-0">
             <a
               href="#"
               className="hover:text-[#f8f6f1] transition-colors duration-300"

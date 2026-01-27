@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import { siteSeo } from "@/content/seo";
 import "./globals.css";
 
 const inter = Inter({
@@ -16,9 +17,40 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Spice Bank | Fine Dining Experience",
-  description:
-    "A new chapter in dining begins. Refined yet daring, timeless yet fresh. An elevated culinary experience.",
+  title: {
+    default: siteSeo.title,
+    template: "%s | Spice Bank",
+  },
+  description: siteSeo.description,
+  keywords: siteSeo.keywords,
+  authors: [{ name: "Spice Bank" }],
+  creator: "Spice Bank",
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    url: siteSeo.url,
+    siteName: "Spice Bank",
+    title: siteSeo.title,
+    description: siteSeo.description,
+    images: [
+      {
+        url: siteSeo.ogImage,
+        width: 1200,
+        height: 630,
+        alt: "Spice Bank",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteSeo.title,
+    description: siteSeo.description,
+  },
+  icons: {
+    icon: "/logo/spice_bank_logo.png",
+    apple: "/logo/spice_bank_logo.png",
+  },
+  metadataBase: new URL(siteSeo.url),
 };
 
 const RootLayout = ({
