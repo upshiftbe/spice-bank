@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const ComingSoon = () => {
   return (
-    <section className="min-h-screen bg-[#f8f6f1] flex flex-col justify-between px-6 lg:px-12 py-12">
+    <section className="min-h-screen bg-[#f8f6f1] flex flex-col justify-between md:items-center lg:items-start px-6 lg:px-20 py-20">
       {/* Logo */}
       <motion.div
         className="relative w-full max-w-[min(90vw,1200px)] h-[clamp(5rem,12vw,10rem)]"
@@ -45,18 +45,17 @@ const ComingSoon = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1], delay: 0.2 }}
       >
-        <div className="relative max-w-[min(90vw,820px)] w-full h-[clamp(5rem,12vw,10rem)]">
+        <div className="relative max-w-[min(90vw,820px)] w-full h-[clamp(5rem,12vw,10rem)] md:items-center lg:items-end">
           <Image
             src="/media/curated_flavours.svg"
             alt="Spice Bank"
             fill
-            className="object-contain object-right"
+            className="object-contain"
             priority
             sizes="(max-width: 250px) 20vw, 120px"
           />
         </div>
       </motion.div>
-
     </section>
   );
 };
